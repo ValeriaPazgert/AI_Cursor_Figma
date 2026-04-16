@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitepace — Design Style Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       DESIGN STYLE GUIDE — Whitepace
+       Figma frame: Design System (node 107:72537)
+       ============================================================ -->
+
+  <div class="container" style="padding-top: var(--spacing-3xl); padding-bottom: var(--spacing-4xl);">
+
+    <!-- Title -->
+    <h1 class="text-display" data-figma-node="107:72935"
+        style="margin-bottom: var(--spacing-4xl);">
+      Design Style Guide
+    </h1>
+
+
+    <!-- ===================== LOGO DESIGN ===================== -->
+    <section data-figma-node="107:72539" style="margin-bottom: var(--spacing-4xl);">
+
+      <h2 class="text-h1" data-figma-node="107:72783"
+          style="margin-bottom: var(--spacing-xl);">
+        Logo Design
+      </h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl);">
+
+        <!-- Logo on primary background -->
+        <div data-figma-node="107:72540"
+             style="background-color: var(--color-primary);
+                    display: flex; align-items: center; justify-content: center;
+                    padding: var(--spacing-4xl); border-radius: var(--radius-md);
+                    grid-row: span 2;">
+          <div class="logo" data-figma-node="107:72543">
+            <img class="logo__icon" src="assets/logo-white.svg" alt="Whitepace icon">
+            <span class="logo__text">whitepace</span>
+          </div>
+        </div>
+
+        <!-- Logo on white background -->
+        <div data-figma-node="107:72541"
+             style="background-color: var(--color-white);
+                    border: 1px solid var(--color-primary-100);
+                    display: flex; align-items: center; justify-content: center;
+                    padding: var(--spacing-3xl); border-radius: var(--radius-md);">
+          <div class="logo logo--on-light" data-figma-node="107:72561">
+            <img class="logo__icon" src="assets/logo-dark.svg" alt="Whitepace icon">
+            <span class="logo__text">whitepace</span>
+          </div>
+        </div>
+
+        <!-- Logo on dark background -->
+        <div data-figma-node="107:72542"
+             style="background-color: var(--color-dark);
+                    display: flex; align-items: center; justify-content: center;
+                    padding: var(--spacing-3xl); border-radius: var(--radius-md);">
+          <div class="logo" data-figma-node="107:72552">
+            <img class="logo__icon" src="assets/logo-white.svg" alt="Whitepace icon">
+            <span class="logo__text">whitepace</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================== COLOR ===================== -->
+    <section data-figma-node="107:72570" style="margin-bottom: var(--spacing-4xl);">
+
+      <h2 class="text-h1" data-figma-node="107:72571"
+          style="margin-bottom: var(--spacing-xl);">
+        Color
+      </h2>
+
+      <!-- Primary Color -->
+      <div style="margin-bottom: var(--spacing-3xl);">
+        <h3 class="text-h2" data-figma-node="107:72572"
+            style="margin-bottom: var(--spacing-lg);">
+          Primary Color
+        </h3>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+          <!-- #043873 swatch -->
+          <div data-figma-node="107:72580"
+               class="swatch swatch--primary"
+               style="height: 83px; border-radius: var(--radius-sm) 0 0 var(--radius-sm);">
+          </div>
+          <!-- #4F9CF9 swatch -->
+          <div data-figma-node="107:72585"
+               class="swatch swatch--primary-light"
+               style="height: 83px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-sm);">
+          <span class="text-label" data-figma-node="107:72574">#043873</span>
+          <span class="text-label" data-figma-node="107:72578">#4F9CF9</span>
+        </div>
+      </div>
+
+      <!-- Secondary Color -->
+      <div>
+        <h3 class="text-h2" data-figma-node="107:72573"
+            style="margin-bottom: var(--spacing-lg);">
+          Secondary Color
+        </h3>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0;">
+          <div data-figma-node="107:72581" class="swatch swatch--yellow"
+               style="height: 83px; border-radius: var(--radius-sm) 0 0 var(--radius-sm);"></div>
+          <div data-figma-node="107:72583" class="swatch swatch--sky"
+               style="height: 83px;"></div>
+          <div data-figma-node="107:72582" class="swatch swatch--white"
+               style="height: 83px;"></div>
+          <div data-figma-node="107:72584" class="swatch swatch--dark"
+               style="height: 83px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;"></div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin-top: var(--spacing-sm);">
+          <span class="text-label" data-figma-node="107:72575">#FFE492</span>
+          <span class="text-label" data-figma-node="107:72576">#A7CEFC</span>
+          <span class="text-label" data-figma-node="107:72577">#FFFFFF</span>
+          <span class="text-label" data-figma-node="107:72579" style="text-align: right;">#212529</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== TYPOGRAPHY ===================== -->
+    <section data-figma-node="107:72586" style="margin-bottom: var(--spacing-4xl);">
+
+      <h2 class="text-h1" data-figma-node="107:72587"
+          style="font-weight: var(--font-weight-medium); margin-bottom: var(--spacing-lg);">
+        Typography
+      </h2>
+
+      <p data-figma-node="107:72588"
+         style="font-family: var(--font-primary);
+                font-weight: var(--font-weight-light);
+                font-size: 100px;
+                line-height: normal;
+                letter-spacing: -2px;
+                color: var(--color-text-primary);">
+        Inter - Google Font
+      </p>
+    </section>
+
+
+    <!-- ===================== GRID SYSTEM ===================== -->
+    <section data-figma-node="107:72589" style="margin-bottom: var(--spacing-4xl);">
+
+      <h2 class="text-h1" data-figma-node="107:72593"
+          style="margin-bottom: var(--spacing-lg);">
+        Grid System
+      </h2>
+
+      <p class="text-h3" data-figma-node="107:72594"
+         style="margin-bottom: var(--spacing-xl); max-width: 900px;">
+        Keeping responsive devices in mind here's our grid system for all devices from 1920px to 320px.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: var(--spacing-xl);">
+
+        <!-- 1920px grid -->
+        <div>
+          <div style="text-align: center; margin-bottom: var(--spacing-xs);">
+            <span class="text-small" style="background-color: #1745E8; color: var(--color-white);
+                  padding: 3px 6px; border-radius: 3px; font-weight: var(--font-weight-bold); font-size: 10px;">
+              1920px
+            </span>
+          </div>
+          <div data-figma-node="107:72596" style="
+            display: flex; gap: var(--grid-gutter); height: 60px;
+            background-color: var(--color-secondary-sky); padding: 0 var(--grid-margin-xl);
+            border-radius: var(--radius-sm); max-width: 100%; overflow: hidden;">
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-xs);">
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 144px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">12 cols · gutter: 32px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 144px</span>
+          </div>
+        </div>
+
+        <!-- 1440px grid -->
+        <div>
+          <div style="text-align: center; margin-bottom: var(--spacing-xs);">
+            <span class="text-small" style="background-color: #1745E8; color: var(--color-white);
+                  padding: 3px 6px; border-radius: 3px; font-weight: var(--font-weight-bold); font-size: 10px;">
+              1440px
+            </span>
+          </div>
+          <div data-figma-node="107:72637" style="
+            display: flex; gap: var(--grid-gutter); height: 60px;
+            background-color: var(--color-secondary-sky); padding: 0 var(--grid-margin-lg);
+            border-radius: var(--radius-sm); max-width: 1440px;">
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-xs); max-width: 1440px;">
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 34px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">12 cols · gutter: 32px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 34px</span>
+          </div>
+        </div>
+
+        <!-- 1152px grid -->
+        <div>
+          <div style="text-align: center; margin-bottom: var(--spacing-xs); max-width: 1152px;">
+            <span class="text-small" style="background-color: #1745E8; color: var(--color-white);
+                  padding: 3px 6px; border-radius: 3px; font-weight: var(--font-weight-bold); font-size: 10px;">
+              1152px
+            </span>
+          </div>
+          <div data-figma-node="107:72679" style="
+            display: flex; gap: var(--grid-gutter); height: 60px;
+            background-color: var(--color-secondary-sky); padding: 0 var(--grid-margin-md);
+            border-radius: var(--radius-sm); max-width: 1152px;">
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-xs); max-width: 1152px;">
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 32px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">12 cols · gutter: 32px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 32px</span>
+          </div>
+        </div>
+
+        <!-- 768px grid -->
+        <div>
+          <div style="text-align: center; margin-bottom: var(--spacing-xs); max-width: 768px;">
+            <span class="text-small" style="background-color: #1745E8; color: var(--color-white);
+                  padding: 3px 6px; border-radius: 3px; font-weight: var(--font-weight-bold); font-size: 10px;">
+              768px
+            </span>
+          </div>
+          <div data-figma-node="107:72721" style="
+            display: flex; gap: var(--grid-gutter); height: 60px;
+            background-color: var(--color-secondary-sky); padding: 0 var(--grid-margin-sm);
+            border-radius: var(--radius-sm); max-width: 768px;">
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-xs); max-width: 768px;">
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 32px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">8 cols · gutter: 32px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 32px</span>
+          </div>
+        </div>
+
+        <!-- 320px grid -->
+        <div>
+          <div style="text-align: center; margin-bottom: var(--spacing-xs); max-width: 320px;">
+            <span class="text-small" style="background-color: #1745E8; color: var(--color-white);
+                  padding: 3px 6px; border-radius: 3px; font-weight: var(--font-weight-bold); font-size: 10px;">
+              320px
+            </span>
+          </div>
+          <div data-figma-node="107:72759" style="
+            display: flex; gap: var(--grid-gutter); height: 60px;
+            background-color: var(--color-secondary-sky); padding: 0 var(--grid-margin-xs);
+            border-radius: var(--radius-sm); max-width: 320px;">
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+            <div class="grid-demo__col"></div><div class="grid-demo__col"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-xs); max-width: 320px;">
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 16px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">4 cols · gutter: 32px</span>
+            <span class="text-small" style="color: #5B47FF; font-family: 'Roboto Mono', monospace; font-size: 12px;">margin: 16px</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== ICONS ===================== -->
+    <section data-figma-node="107:72785" style="margin-bottom: var(--spacing-4xl);">
+
+      <h2 class="text-h1" data-figma-node="107:72784"
+          style="font-weight: var(--font-weight-semibold); margin-bottom: var(--spacing-xl);">
+        Icons
+      </h2>
+
+      <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-xl); align-items: center;">
+        <img class="icon icon--lg" src="assets/icons/dropbox.svg"   alt="Dropbox"       data-figma-node="107:72835">
+        <img class="icon icon--lg" src="assets/icons/slack.svg"     alt="Slack"          data-figma-node="107:72843">
+        <img class="icon icon--lg" src="assets/icons/gmail.svg"     alt="Gmail"          data-figma-node="107:72831">
+        <img class="icon icon--lg" src="assets/icons/google-drive.svg" alt="Google Drive" data-figma-node="107:72854">
+        <img class="icon icon--lg" src="assets/icons/outlook.svg"   alt="Outlook"        data-figma-node="107:72882">
+        <img class="icon icon--lg" src="assets/icons/apple.svg"     alt="Apple"          data-figma-node="107:72891">
+        <img class="icon icon--lg" src="assets/icons/windows.svg"   alt="Windows"        data-figma-node="107:72896">
+        <img class="icon icon--lg" src="assets/icons/android.svg"   alt="Android"        data-figma-node="107:72903">
+        <img class="icon icon--lg" src="assets/icons/facebook.svg"  alt="Facebook"       data-figma-node="107:72913">
+        <img class="icon icon--lg" src="assets/icons/twitter.svg"   alt="Twitter"        data-figma-node="107:72915">
+        <img class="icon icon--lg" src="assets/icons/linkedin.svg"  alt="LinkedIn"       data-figma-node="107:72918">
+      </div>
+    </section>
+
+
+    <!-- ===================== COMPONENTS PREVIEW ===================== -->
+    <section style="margin-bottom: var(--spacing-4xl);">
+
+      <h2 class="text-h1" style="margin-bottom: var(--spacing-xl);">
+        Components
+      </h2>
+
+      <!-- Buttons -->
+      <div style="margin-bottom: var(--spacing-xl);">
+        <h3 class="text-h2" style="margin-bottom: var(--spacing-lg);">Buttons</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-md); align-items: center;">
+          <button class="btn btn-primary">Try Whitepace free</button>
+          <button class="btn btn-secondary">Try Whitepace free</button>
+          <button class="btn btn-outline">Try Whitepace free</button>
+          <button class="btn btn-white">Try Whitepace free</button>
+        </div>
+      </div>
+
+      <!-- Typography Scale -->
+      <div style="margin-bottom: var(--spacing-xl);">
+        <h3 class="text-h2" style="margin-bottom: var(--spacing-lg);">Typography Scale</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+          <p class="text-display" style="font-size: 64px; letter-spacing: -2.56px;">Display — 120px Bold</p>
+          <p class="text-h1" style="font-size: 48px;">Heading 1 — 72px Regular</p>
+          <p class="text-h2" style="font-size: 36px;">Heading 2 — 48px Regular</p>
+          <p class="text-h3" style="font-size: 28px; line-height: 1.5;">Heading 3 — 36px Regular</p>
+          <p class="text-label">Label — 24px Bold</p>
+          <p class="text-body">Body — 18px Regular. Your whitepace is your own creative space to capture thoughts and ideas.</p>
+          <p class="text-small">Small — 14px Regular</p>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div>
+        <h3 class="text-h2" style="margin-bottom: var(--spacing-lg);">Cards</h3>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl);">
+          <div class="card">
+            <h4 class="card__title">Default Card</h4>
+            <p class="card__text">Background: --color-white</p>
+          </div>
+          <div class="card card--primary">
+            <h4 class="card__title">Primary Card</h4>
+            <p class="card__text">Background: --color-primary</p>
+          </div>
+          <div class="card card--dark">
+            <h4 class="card__title">Dark Card</h4>
+            <p class="card__text">Background: --color-dark</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

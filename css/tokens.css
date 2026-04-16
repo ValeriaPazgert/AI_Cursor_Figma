@@ -1,0 +1,174 @@
+/* ============================================================
+   DESIGN TOKENS — Whitepace Design System
+   Figma: https://www.figma.com/design/WC30xkHHSFHdsJJpaKwDy9/
+   Design System Node: 107:72537
+   Landing Page Node: 9:101
+   ============================================================ */
+
+:root {
+
+  /* === COLORS === */
+
+  /* Figma Variable: Secondary/500 */
+  --color-primary: #043873;
+
+  /* Figma: Primary Color section — light swatch */
+  --color-primary-light: #4F9CF9;
+
+  /* Figma Variable: Primary/100 */
+  --color-primary-100: #C4DEFD;
+
+  /* Figma Variable: Primary/900 */
+  --color-text-primary: #1A3453;
+
+  /* Figma: Secondary Color section — yellow swatch */
+  --color-secondary-yellow: #FFE492;
+
+  /* Figma: Secondary Color section — sky blue swatch */
+  --color-secondary-sky: #A7CEFC;
+
+  /* Figma: Secondary Color section — white swatch */
+  --color-white: #FFFFFF;
+
+  /* Figma: Secondary Color section — dark swatch */
+  --color-dark: #212529;
+
+  /* Figma: border on white color block */
+  --color-border: #B4B4B4;
+
+  /* Figma: Footer description text */
+  --color-footer-text: #F7F7EE;
+
+
+  /* === FONTS === */
+
+  /* Figma: Typography section — Inter - Google Font */
+  --font-primary: 'Inter', sans-serif;
+
+
+  /* === TYPOGRAPHY === */
+
+  /* Figma: Design System title (node 107:72935) — 120px Bold, ls -4% */
+  --text-display-size: 120px;
+  --text-display-weight: 700;
+  --text-display-line-height: normal;
+  --text-display-letter-spacing: -4.8px;
+
+  /* Figma Variable: Header/H1 — 72px Bold, ls -2% */
+  --text-h1-size: 72px;
+  --text-h1-weight: 700;
+  --text-h1-line-height: normal;
+  --text-h1-letter-spacing: -1.44px;
+
+  /* Figma Variable: Header/H2 — 64px Bold, ls -2% */
+  --text-h2-size: 64px;
+  --text-h2-weight: 700;
+  --text-h2-line-height: normal;
+  --text-h2-letter-spacing: -1.28px;
+
+  /* Figma Variable: Header/H4 — 36px Bold, ls -2% */
+  --text-h4-size: 36px;
+  --text-h4-weight: 700;
+  --text-h4-line-height: normal;
+  --text-h4-letter-spacing: -0.72px;
+
+  /* Figma Variable: Header/H5 — 28px Bold, lh 36px, ls -2% */
+  --text-h5-size: 28px;
+  --text-h5-weight: 700;
+  --text-h5-line-height: 36px;
+  --text-h5-letter-spacing: -0.56px;
+
+  /* Figma Variable: Paragraph/P1/Regular — 24px Regular, lh 32px, ls -2% */
+  --text-p1-size: 24px;
+  --text-p1-weight: 400;
+  --text-p1-line-height: 32px;
+  --text-p1-letter-spacing: -0.48px;
+
+  /* Figma Variable: Paragraph/P1/Semibold — 24px 600, lh 36px, ls 0 */
+  --text-p1-semibold-weight: 600;
+  --text-p1-semibold-line-height: 36px;
+  --text-p1-semibold-letter-spacing: 0;
+
+  /* Figma Variable: Paragraph/P2/Regular — 18px Regular, lh 30px, ls -2% */
+  --text-body-size: 18px;
+  --text-body-weight: 400;
+  --text-body-line-height: 30px;
+  --text-body-letter-spacing: -0.36px;
+
+  /* Figma Variable: Paragraph/P2/Medium — 18px 500, lh 23px, ls -2% */
+  --text-body-medium-weight: 500;
+  --text-body-medium-line-height: 23px;
+
+  /* Figma Variable: Paragraph/P2/Bold — 18px 700, ls -2% */
+  --text-body-bold-weight: 700;
+
+  /* Figma Variable: Paragraph/P3/Regular — 16px Regular, lh 20px, ls -2% */
+  --text-small-size: 16px;
+  --text-small-weight: 400;
+  --text-small-line-height: 20px;
+  --text-small-letter-spacing: -0.32px;
+
+  /* Figma Variable: Paragraph/P3/Medium — 16px 500, ls -2% */
+  --text-small-medium-weight: 500;
+
+
+  /* === SPACING === */
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 60px;
+  --spacing-4xl: 100px;
+  --spacing-section: 140px;
+
+  /* Figma: Grid System — gutter (32px across all breakpoints) */
+  --spacing-gutter: 32px;
+
+
+  /* === BORDER RADIUS === */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-full: 9999px;
+
+
+  /* === SHADOWS === */
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  /* Figma: Pricing card shadow (node 9:2221) */
+  --shadow-pricing: 0px 4px 50px 0px rgba(0, 0, 0, 0.08);
+  /* Figma: Testimonial card shadow (node 9:4741) */
+  --shadow-card: 15px 10px 50px 0px rgba(0, 0, 0, 0.1);
+  /* Figma: Icon box shadow (node 107:53607) */
+  --shadow-icon-box: 0px 4px 50px -11px rgba(0, 0, 0, 0.25);
+
+
+  /* === ICON SIZE === */
+
+  --icon-size: 72px;
+  --icon-size-sm: 24px;
+  --icon-size-xs: 18px;
+
+
+  /* === GRID / LAYOUT === */
+
+  /* Figma: Landing page content width — 1920px with 220px margins */
+  --page-max-width: 1480px;
+  --page-padding: 220px;
+
+  /* Figma: Grid System section (node 107:72595) */
+  --grid-max-width: 1440px;
+  --grid-columns: 12;
+  --grid-gutter: 32px;
+  --grid-margin-xl: 144px;
+  --grid-margin-lg: 34px;
+  --grid-margin-md: 32px;
+  --grid-margin-sm: 32px;
+  --grid-margin-xs: 16px;
+}
