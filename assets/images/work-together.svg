@@ -1,0 +1,46 @@
+<svg viewBox="0 0 583 543" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer dashed circle -->
+  <circle cx="300" cy="271.4" r="271.4" stroke="#C0DDFB" stroke-width="2" stroke-dasharray="12 8"/>
+
+  <!-- Inner dashed circle -->
+  <circle cx="300" cy="271.4" r="158.9" stroke="#C0DDFB" stroke-width="2" stroke-dasharray="12 8"/>
+
+  <!-- Yellow dot -->
+  <circle cx="143.7" cy="47.6" r="25" fill="#FFD252"/>
+  <!-- Green dot (top center) -->
+  <circle cx="301.4" cy="112.5" r="25" fill="#2AB344"/>
+  <!-- Blue dot (top right) -->
+  <circle cx="491.9" cy="87" r="25" fill="#4F9CF9"/>
+  <!-- Red dot (far left) -->
+  <circle cx="28.7" cy="271.8" r="25" fill="#F25767"/>
+  <!-- Blue dot (inner left) -->
+  <circle cx="141.2" cy="271.8" r="25" fill="#4F9CF9"/>
+  <!-- Blue dot (inner right, softer) -->
+  <circle cx="459" cy="271.8" r="22" fill="#86B7F8"/>
+  <!-- Green dot (far right) -->
+  <circle cx="554.3" cy="358" r="25" fill="#2AB344"/>
+  <!-- Orange dot (bottom center) -->
+  <circle cx="300.5" cy="430.3" r="25" fill="#FFB648"/>
+  <!-- Blue dot (bottom left) -->
+  <circle cx="141.2" cy="495.1" r="25" fill="#4F9CF9"/>
+
+  <!-- Center logo shadow box -->
+  <defs>
+    <filter id="logo-shadow" x="239" y="214" width="122" height="126" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="bg"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.15 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite in2="bg"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect x="259" y="230.6" width="82" height="82" rx="10" fill="white" filter="url(#logo-shadow)"/>
+
+  <!-- Whitepace logo icon -->
+  <g transform="translate(278.5, 252) scale(0.55)">
+    <path d="M0 5.03V19.41C0 23.79 5.33 26.12 8.59 23.06L24.15 8.68C27.56 5.55 25.34 0 20.67 0H5.11C2.3 0 0 2.26 0 5.03Z" fill="#4856DF"/>
+    <path d="M73.65 0H58.09C53.49 0 51.2 5.55 54.61 8.68L70.17 23.06C73.43 26.05 78.76 23.79 78.76 19.41V5.03C78.76 2.26 76.46 0 73.65 0Z" fill="#4856DF"/>
+    <path d="M42.9 35.1L70.17 60.34C73.43 63.34 78.76 61.07 78.76 56.7V42.18C78.76 40.79 78.17 39.48 77.13 38.53L42.9 6.79C40.9 4.96 37.86 4.96 35.86 6.79L1.63 38.53C0.59 39.48 0 40.79 0 42.18V56.7C0 61.07 5.33 63.41 8.59 60.34L35.86 35.1C37.86 33.27 40.9 33.27 42.9 35.1Z" fill="#4856DF"/>
+  </g>
+</svg>
